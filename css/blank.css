@@ -1,0 +1,25 @@
+body {
+  font-family: Aleo, sans-serif;
+}
+
+.group--button {
+  width: 100%;
+}
+
+.btn {
+  display: block;
+  transform: translateX(0);
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: blueviolet;
+  color: #fff;
+  font-size: 1rem;
+  transition-property: background-color, transform;
+  transition-duration: 1s, 2s;
+  transition-timing-function: ease, cubic-bezier();
+}
+
+.btn:hover {
+  background-color: blue;
+  transform: translateX(500px);
+}

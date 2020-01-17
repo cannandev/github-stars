@@ -1,0 +1,42 @@
+{
+  "name": "github-stars",
+  "version": "1.0.0",
+  "description": "A Fetch API test project using github endpoints.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cannandev/github-stars.git"
+  },
+  "keywords": [
+    "fetch api",
+    "js",
+    "promises"
+  ],
+  "author": "Claire Annan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cannandev/github-stars/issues"
+  },
+  "homepage": "https://github.com/cannandev/github-stars#readme",
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.3.1",
+    "babel": "^6.23.0",
+    "es6-promise": "^4.2.8",
+    "http": "0.0.0",
+    "xhr2": "^0.2.0",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
