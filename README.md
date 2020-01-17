@@ -11,7 +11,7 @@ Refer to the [Github Developer Guide](https://developer.github.com/v3/) for deta
 **Github Stars** uses their [Repos Response](https://developer.github.com/v3/repos/#response) endpoint data.
 
 ## Installation
-1. Clone this repository into a local folder: ``
+1. Clone this repository into a local folder: `git@github.com:cannandev/github-stars.git`
 1. Run `npm install` to install dependencies.
 1. Run `http-server` and navigate to the available url. It defaults to `http://127.0.0.1:8080` local server.
 1. You should see **Fetch API Test** in your browser.
