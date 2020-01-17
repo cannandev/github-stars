@@ -1,10 +1,10 @@
-# Welcome to Fetch API Test
+# Welcome to Github Stars
 ----
 
 This tiny JS application features big JavaScript concepts: [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) and Promises. It returns a simple list of a user's Github repositories. The list can be filtered by the number of stars it has received (aka _stargazers_).
 
 ## About the Code
-**Github Stars** is written in pure ES6 JavaScript. No jQuery or AJAX libraries. I wrote it to understand and practice the Fetch API myself.
+**Github Stars** is written in pure ES6 JavaScript. No jQuery or AJAX libraries.
 
 ## About the Github API
 Refer to the [Github Developer Guide](https://developer.github.com/v3/) for details on how to use the API.
