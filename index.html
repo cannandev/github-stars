@@ -15,13 +15,20 @@
   <div class="wrapper">
     <header>
       <h1>Github Stars</h1>
-      <form action="">
-        <input type="text" placeholder="Start typing a repository name">
+      <form action="#" autocomplete="off">
+        <div class="typeahead">
+          <input type="text" placeholder="Start typing a repository name" id="user">
+          <ul>
+            <li>User2</li>
+            <li>User2</li>
+            <li>User3</li>
+          </ul>
+        </div>
       </form>
     </header>
     <aside class="profile">
       <div class="profile__image-wrapper">
-        <img src="images/chrisCoyier.jpg" alt="Owner Profile" class="profile__image">
+        <img src="images/chrisCoyier.jpg" alt="User Profile" class="profile__image">
       </div>
       <div class="profile__info">
         <h2 class="profile__image">Chris Coyier</h2>
