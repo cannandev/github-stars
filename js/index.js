@@ -1,6 +1,16 @@
 /* eslint-disable prefer-promise-reject-errors */
 /* eslint-disable no-undef */
 
+// Since Fetch is a Promise, send the error into a catch call with reject()
+const handleResponse = response => {
+  return response.json()
+    .then(body => {
+      // response.json returns a promise, so resolve it first.
+      if (response.ok) return body
+      return Promise.reject({ body })
+    })
+}
+
 // Only return the data we need. Implicit return with arrow function.
 const massageData = data => data.map(repo => {
   return {
@@ -11,7 +21,13 @@ const massageData = data => data.map(repo => {
 })
 
 // Narrow down data to greater than 20 stars.
-const filterData = data => data.filter(repo => repo.stars > 10)
+const filterData = data => {
+	let num = getSliderValue()
+	return data.filter(repo => (repo.stars > parseInt(num)))
+}
+
+// Add event listener on slider to get the user input
+const getSliderValue = _ => document.getElementById('range-slider').value
 
 // Convert each item to our link format
 const convertDataToHTMLString = data => {
@@ -23,16 +39,6 @@ const createList = HTMLString => {
   const ol = document.createElement('ol')
   ol.innerHTML = HTMLString
   document.body.appendChild(ol)
-}
-
-// Since Fetch is a Promise, send the error into a catch call with reject()
-const handleResponse = response => {
-  return response.json()
-    .then(body => {
-      // response.json returns a promise, so resolve it first.
-      if (response.ok) return body
-      return Promise.reject({ body })
-    })
 }
 
 /**
