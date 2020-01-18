@@ -1,0 +1,52 @@
+:root {
+  font-family: 'Roboto', sans-serif;
+  ;
+}
+
+h1,
+h2 {
+  font-family: 'Gayathri', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ol li {
+  padding: 1em;
+}
+
+.wrapper {
+  width: 500px;
+}
+
+header {
+  position: relative;
+}
+
+header h1::after {
+  content: url(../images/stars.png);
+  position: absolute;
+  top: 0;
+}
+
+header form input {
+  width: 100%;
+}
+
+.profile {
+  display: flex;
+  height: 250px;
+  padding-top: 2em;
+}
+
+.profile__image {
+  width: 100%;
+  height: auto;
+}
