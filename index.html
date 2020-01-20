@@ -12,9 +12,10 @@
 <body>
   <h1>Fetch API Test</h1>
   <h2>Github Repos Stars</h2>
-  <form>
+  <form class="slider">
     <label>Filter by number of stars:</label>
-    <input type="range" min="0" max="500" step="50" id="range-slider">
+    <input type="range" min="0" max="500" step="50" class="slider__range" id="range-slider">
+    <strong class="slider__badge">0</strong>
   </form>
   <ol class="repo-list"></ol>
   <script type="module" src="js/index.js"></script>
